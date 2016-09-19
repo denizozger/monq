@@ -104,6 +104,7 @@ describe('Worker', function () {
 
                 worker.start();
             });
+            
             it('does not wait for job to complete when explicitly told to', function(done){
               worker.parallel = true;
               worker.start();
